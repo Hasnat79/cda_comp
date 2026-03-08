@@ -125,8 +125,9 @@ def update_bunk_fields(bunk_data):
     for bunk in [0,1,2,3,4,5,6,7,8]:
         bunk_data[bunk] = {}
     for bunk_id, data in bunk_data.items():
+        print(f"Processing Bunk {bunk_id}...")
         data['score'] = get_score(bunk_id)
-        # print(f"Bunk {bunk_id} score: {data['score']}")
+        print(f"Bunk {bunk_id} score: {data['score']}")
         data['status'] = get_status(data['score'])
         data['action'] = get_action(data['score'])
         data['name']   = get_name(bunk_id)

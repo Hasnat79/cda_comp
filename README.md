@@ -22,6 +22,17 @@ This approach aims to reduce manual labor, improve consistency in bunk scoring, 
 git clone https://github.com/Hasnat79/cda_comp
 pip install -r requirements.txt
 ```
+#### Alternatively you can install following packages
+```
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install timm
+pip install matplotlib
+pip install pandas
+pip install opencv-python
+pip install seaborn
+pip install Flask==2.3.2 Werkzeug==2.3.6
+```
+
 
 ### Project Structure
 ```
