@@ -26,7 +26,7 @@ from torchvision.transforms import RandAugment, RandomAffine
 from tqdm import tqdm
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-csv_file = '../data/annotations.csv'
+csv_file = '../../data/annotations.csv'
 root_dir = '/data/hma18/CDA_hackathon/FBSI/dataset'
 outputs_dir = "/data/hma18/CDA_hackathon/cda_comp/outputs"
 # train_transform = transforms.Compose([
