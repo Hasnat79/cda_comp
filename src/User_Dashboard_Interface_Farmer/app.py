@@ -47,7 +47,7 @@ def infer(model,model_path,img_path):
     return pred
 
 example_img = '/data/hma18/CDA_hackathon/FBSI/dataset/Score 1/score-1_0.jpg'  # Adjust
-model_save_path = "/data/hma18/CDA_hackathon/cda_comp/outputs/models/advanced_vit_best.pth"
+model_save_path = "../../outputs/models/advanced_vit_best.pth"
 # infer(model, model_save_path, example_img)
 
 
@@ -80,16 +80,16 @@ def get_adjustment(score):
 def get_score(bunk_id):
     # return random.choice([0, 0.5, 1, 2, 3, 4])
     img_paths=[
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-0_1.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-0.5_4.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-1_4.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-2_55.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-3_3.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-4_0.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-0_26.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-0_82.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-0.5_43.jpg",
-        "/data/hma18/CDA_hackathon/cda_comp/src/User_Dashboard_Interface_Farmer/static/score-2_44.jpg"
+        "./static/score-0_1.jpg",
+        "./static/score-0.5_4.jpg",
+        "./static/score-1_4.jpg",
+        "./static/score-2_55.jpg",
+        "./static/score-3_3.jpg",
+        "./static/score-4_0.jpg",
+        "./static/score-0_26.jpg",
+        "./static/score-0_82.jpg",
+        "./static/score-0.5_43.jpg",
+        "./static/score-2_44.jpg"
     ]
     data = {
         0:infer(model, model_save_path, img_paths[0]),
