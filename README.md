@@ -119,7 +119,6 @@ python main.py infer \
   --model-type simple_cnn
 ```
 
-### Run the Application Dashboard
 
 
 ## Result for Demonstration
